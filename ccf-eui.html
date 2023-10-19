@@ -13,12 +13,12 @@
 </head>
 <body>
   <ccf-eui theme="sennet" use-remote-api="false" hubmap-data-url="" login-disabled="true" logo-tooltip=""
-    home-url="https://sennetconsortium.github.io/ccf-preview/"></ccf-eui>
+    home-url="https://data.sennetconsortium.org"></ccf-eui>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const eui = document.querySelector('ccf-eui');
       eui.dataSources = [
-        'https://hubmapconsortium.github.io/hra-registrations/staging/sennet/rui_locations.jsonld',
+        'https://apps.humanatlas.io/hra-api--staging/v1/sennet/rui_locations.jsonld',
         
         // Uncomment below to add HuBMAP data
         // 'https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld'
